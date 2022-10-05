@@ -1,0 +1,101 @@
+html body {
+  margin: 0;
+  padding: 00
+}
+
+section h1 {
+  text-align: center;
+  font-family: verdana, san-serif;
+  font-size: 2em;
+}
+
+.title {
+  animation-name: slidein;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+
+.para {
+  animation-name: fadeout;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+@keyframes slidein {
+    0% {
+      margin-left: 100%;
+    }
+
+    100%{
+      margin-left: 0%;  
+    }
+
+}
+
+@keyframes fadeout{
+    from{
+      color: red;
+    }
+    to{
+      color:blue;
+    }  
+}
+
+/*
+* Happy Face
+*/
+
+.main-container{
+  display:flex;
+  justify-content: center;
+}
+
+.face-container{
+  width: 400px;
+  height: auto;
+  text-align: center;
+  background-color: pink;
+}
+
+
+.happy-face{
+  width: 200px;
+  height: auto;
+}
+
+
+.translate:hover {
+  transition-duration: 2s;
+  transition-delay: 0.4s;
+  transform: translate(120px, 75px);
+}
+
+.rotate:hover{
+  transition-duration: 3s;
+  transition-delay: 0.5s;
+  transform: rotate(270deg);
+}
+.skew:hover{
+  transform: skew(50deg, 60deg);
+  transition-duration: 5s;
+  transition-delay: 0.5s;
+}
+.scale:hover{
+  transform: scale(1.5, 2.5);
+  transition-duration: 5s;
+  traansition-delay: 0.7s;
+
+}
+
+.combined1:hover{
+  transform: scale(0.2, 0.3) translate(-120px, -75px); 
+  transition-duration: 5s;
+  transition-delay: 0.2s;
+}
+
+.combined2:hover{
+  transform:  skew(30deg, 45deg) rotate(180deg);
+  transition-duration: 3s;
+  transition-delay: 1s;
+
+}
